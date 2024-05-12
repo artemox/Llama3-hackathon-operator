@@ -1,0 +1,8 @@
+.env
+.__pycache__
+*.pyc
+*.xlsm
+*.csv
+api_config.js
+venv/
+*.DS_Store

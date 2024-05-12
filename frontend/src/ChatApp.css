@@ -1,0 +1,84 @@
+.chat-app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f8f9fa;
+    margin: 10px; /* 全体のマージンを設定 */
+    padding: 0 1%; /* 左右のパディングを適用 */
+  }
+  
+  .app-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #005B99;
+    color: white;
+    padding: 10px 20px;
+    height: 50px;
+  }
+  
+  .main-container {
+    display: flex;
+    height: calc(100vh - 70px); /* ヘッダーの高さとマージンを引く */
+  }
+  
+  .left-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; /* 右側のコンテナとの間にマージンを追加 */
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+  }
+  
+  .avatar-container {
+    flex-grow: 1;
+    border: 2px solid #005B99;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 10px; /* 下部の入力欄との間にマージンを追加 */
+  }
+  
+  .chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #005B99;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+    background-color: #ffffff;
+    margin-left: 10px; /* 左側のコンテナとの間にマージンを追加 */
+    margin-top: 10px;  
+    margin-bottom: 20px; 
+  }
+  
+  .chat-form {
+    display: flex;
+    border: 2px solid #005B99;
+    border-radius: 10px;
+    margin-top: auto; /* フォームを下に配置 */
+    padding: 10px;
+  }
+  
+  input[type="text"], button {
+    height: 40px;
+    padding: 5px;
+    border: none; /* 入力欄の枠を削除 */
+  }
+  
+  input[type="text"] {
+    flex-grow: 1; /* 入力欄を広げる */
+    margin-right: 5px; /* ボタンとの間に余白を設定 */
+  }
+  
+  button {
+    width: 80px; 
+    height: 60px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px; /* ボタンの角を丸くする */
+  }
+  
